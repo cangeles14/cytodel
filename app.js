@@ -21,7 +21,9 @@ app.use(indexRoutes);
 
 // ---------------- MongoDB Config ----------------------//
 
-mongoose.connect("mongodb://localhost/cytodel | mongodb://<christopher>:<chris14>@ds229609.mlab.com:29609/cytodel");
+var url = process.env.DATABASEURL || "mongodb://localhost/cytodel";
+mongoose.connect(url);
+
 
 // ---------------- Passport/User Config ----------------------//
 
