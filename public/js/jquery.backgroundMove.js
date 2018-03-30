@@ -28,7 +28,7 @@ $('element').backgroundMove();
 
 // Background Move
 
-$('.bonta').backgroundMove();
+
 
 
 

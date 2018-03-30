@@ -114,7 +114,7 @@ a:hover, a:active {
 
 .home-content {
   margin-top: 15rem;
-  height: 400px;
+  height: 500px;
   background-image: url("/img/background2.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -122,6 +122,9 @@ a:hover, a:active {
 }
 /*Home/Publications/News*/
 
+.home-news .col-wrapper {
+  padding:0 !important;
+}
 .text-icon i {
   margin-right: 2rem;
 }
@@ -157,6 +160,8 @@ a:hover, a:active {
 margin-top: 25%;
 margin-bottom: 25%;
 }
+
+
 
 /*About*/
 
@@ -377,12 +382,12 @@ margin-bottom: 25%;
 
 .bonta {
 
-  height: 400px;
+  height: 500px;
   max-width: 100%;
   background-image: url(/img/bonta.png);
   background-repeat: no-repeat;
-  margin-left: 20%;
   background-size: contain;
-  margin-top: 5%;
-
+  background-position: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
