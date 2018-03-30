@@ -38,10 +38,10 @@ router.get("/register", function(req,res){
 // });
 // ---------------- Logout ----------------------//
 
-router.get("/logout", function(req,res){
-    req.logout();
-    res.redirect("/home");
-});
+// router.get("/logout", function(req,res){
+//     req.logout();
+//     res.redirect("/home");
+// });
 
 // ---------------- Home ----------------------//
 

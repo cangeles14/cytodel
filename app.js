@@ -13,6 +13,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.set("view engine", "ejs");
 app.use(methodOverride("_method"));
 app.use(express.static(__dirname + '/public'));
+require('dotenv').config();
 
 // ---------------- Required Routes ----------------------//
 
@@ -41,7 +42,7 @@ mongoose.connect(url);
 // ---------------- Landing Route ----------------------//
 
 app.get("/", function(req,res){
-   res.render("home"); 
+   res.redirect("/home"); 
 });
 
 // ---------------- Listen Port ----------------------//
