@@ -1,0 +1,27 @@
+/*-----------------  Navigation Styles --------------------*/
+
+.nav-logo {
+    max-height: 100px;
+    max-width: 300px;
+    border:none;
+    filter: brightness(0) invert(1);
+}
+
+.nav-link {
+  color: white;
+}
+
+@media (max-width: 575.98px) {
+  .nav-logo {
+    max-height: 50px;
+    max-width: 150px;
+    border:none;
+    filter: brightness(0) invert(1);
+  } 
+}
+
+.navbar-custom {
+  background-color: rgba(0,0,0,.3);
+  padding: 0 !important;
+  margin: 0 !important;
+}

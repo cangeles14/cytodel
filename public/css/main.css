@@ -1,0 +1,388 @@
+* {
+  margin:0;
+  padding:0;
+}
+html * {
+  font-size: 16px;
+  line-height: 1.6em;
+  letter-spacing: 0px;
+  font-style: normal;
+  font-weight: 300;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  width: 100%; 
+  height:100%;
+}
+
+#footer {
+width: 100%;
+height: 70px;
+background-color: greenyellow;
+position: relative;
+clear: both;
+}
+.btn-primary {
+  background-color:#649ad0 !important;
+  border-color: #649ad0 !important;
+}
+a:link, a:visited {
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color:#20B84E;
+}
+
+/*Carousel*/
+ 
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.carousel-li {
+  width:250px !important; 
+  height:10px !important; 
+  opacity: 0.7 !important;
+  top: 20px !important;
+}
+
+.custom-caption {
+    position: absolute;
+    top: 15rem;
+    left: 12em;
+    z-index: 10;
+    color: black;
+    text-align: center;
+}
+
+/*Home/About*/
+
+.home-about {
+  height: 300px;
+  width: auto;
+  margin-bottom: 10rem;
+}
+
+.col-wrapper {
+  margin-top: 50%;
+}
+.col-wrapper a {
+  margin-top: 5rem;
+}
+.col-wrapper-text p {
+  min-height: 125px; 
+}
+
+.col-wrapper-heading h4 {
+  border-left: 4px solid #649ad0;
+  height: 50px;
+  font-size: 24px;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+.col-wrapper-heading h4:hover {
+  text-decoration: underline;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+.home-about {
+  height: 1900px;
+  width: auto;
+  margin-bottom: 10rem;
+}
+
+.col-wrapper-heading h4 {
+  border-left: 4px solid #649ad0;
+  height: 50px;
+  font-size: 20px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+}
+
+/*home/video*/
+
+.home-content {
+  margin-top: 15rem;
+  height: 400px;
+  background-image: url("/img/background2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/*Home/Publications/News*/
+
+.text-icon i {
+  margin-right: 2rem;
+}
+
+.feature-icon  {
+  font-size: 100em;
+}
+
+.info-pic {
+  background-image: url("/img/neurons.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 500px;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.info-pic-2 {
+  background-image: url("/img/nyc.jpeg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 1000px;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#about, #target, #contact {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
+.hero-text {
+margin-top: 25%;
+margin-bottom: 25%;
+}
+
+/*About*/
+
+.about-container {
+  margin-top: 10rem;
+}
+
+/*Angled*/
+
+.edge--bottom {
+  position: relative;
+  z-index: 1;
+}
+.edge--bottom:after {
+  background: inherit;
+  content: "";
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+}
+.edge--bottom:after {
+  bottom: 0;
+  -webkit-transform: skewY(-1.5deg);
+          transform: skewY(-1.5deg);
+  -webkit-transform-origin: 100%;
+          transform-origin: 100%;
+}
+
+.edge--bottom--reverse {
+  position: relative;
+  z-index: 1;
+}
+.edge--bottom--reverse:after {
+  background: inherit;
+  content: "";
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+}
+.edge--bottom--reverse:after {
+  bottom: 0;
+  -webkit-transform: skewY(1.5deg);
+          transform: skewY(1.5deg);
+  -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+}
+
+.edge--top {
+  position: relative;
+  z-index: 1;
+}
+.edge--top:before {
+  background: inherit;
+  content: "";
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+}
+.edge--top:before {
+  top: 0;
+  -webkit-transform: skewY(1.5deg);
+          transform: skewY(1.5deg);
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+}
+
+
+.edge--top--reverse {
+  position: relative;
+  z-index: 1;
+}
+.edge--top--reverse:before {
+  background: inherit;
+  content: "";
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+}
+.edge--top--reverse:before {
+  top: 0;
+  -webkit-transform: skewY(-1.5deg);
+          transform: skewY(-1.5deg);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+.edge--both {
+  position: relative;
+  z-index: 1;
+}
+.edge--both:before, .edge--both:after {
+  background: inherit;
+  content: "";
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+}
+.edge--both:before {
+  top: 0;
+  -webkit-transform: skewY(1.5deg);
+          transform: skewY(1.5deg);
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+}
+.edge--both:after {
+  bottom: 0;
+  -webkit-transform: skewY(-1.5deg);
+          transform: skewY(-1.5deg);
+  -webkit-transform-origin: 100%;
+          transform-origin: 100%;
+}
+
+.edge--both--reverse {
+  position: relative;
+  z-index: 1;
+}
+.edge--both--reverse:before, .edge--both--reverse:after {
+  background: inherit;
+  content: "";
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+}
+.edge--both--reverse:before {
+  top: 0;
+  -webkit-transform: skewY(-1.5deg);
+          transform: skewY(-1.5deg);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+.edge--both--reverse:after {
+  bottom: 0;
+  -webkit-transform: skewY(1.5deg);
+          transform: skewY(1.5deg);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+
+.block {
+  margin: 0 0 100px;
+  padding: 5% 20px;
+  text-align: center;
+}
+.block-small {
+  margin: 0 0 20px;
+  padding: 0;
+  text-align: center;
+}
+.-nomargin {
+  margin: 0 0 0 !important;
+}
+
+/*Color Palette*/
+
+.-navy {
+  background: #536773;
+}
+
+.-blue {
+  background: #649ad0;
+}
+
+.-orange {
+  background: #FFAF7E;
+}
+
+.-green {
+  background: #59B4A0;
+}
+
+.-purple {
+  background:#5F5F7E;
+}
+
+.-lightgreen {
+  background:#B2EB74;
+}
+.-white {
+  background:white;
+}
+
+.-lightblue {
+  background:#C4CDEE;
+}
+
+.-lightnavy {
+  background:#687ABB;
+}
+.hideme
+{
+    opacity:0;
+}
+
+/*Movement BonTA*/
+
+.bonta {
+
+  height: 400px;
+  max-width: 100%;
+  background-image: url(/img/bonta.png);
+  background-repeat: no-repeat;
+  margin-left: 20%;
+  background-size: contain;
+  margin-top: 5%;
+
+}
