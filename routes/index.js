@@ -2,7 +2,7 @@
 
 var express = require('express');
 var router = express.Router();
-var passport = require('passport');
+// var passport = require('passport');
 var User = require('../models/user');
 
 // ---------------- Register ----------------------//
@@ -13,29 +13,29 @@ router.get("/register", function(req,res){
 
 // ---------------- Sign Up ----------------------//
 
-router.post("/register", function(req,res){
-    var newUser = new User({username:req.body.username});
-    User.register(newUser, req.body.password, function(err, user){
-        if(err) {
-            return res.redirect("register");
-        }
-        passport.authenticate("local")(req,res, function(){
-            res.redirect("/home");
-        });
-    });
-});
+// router.post("/register", function(req,res){
+//     var newUser = new User({username:req.body.username});
+//     User.register(newUser, req.body.password, function(err, user){
+//         if(err) {
+//             return res.redirect("register");
+//         }
+//         passport.authenticate("local")(req,res, function(){
+//             res.redirect("/home");
+//         });
+//     });
+// });
 // ---------------- Login ----------------------//
 
-router.get("/login", function(req,res){
-    res.render("login");
-});
+// router.get("/login", function(req,res){
+//     res.render("login");
+// });
 
-router.post("/login", passport.authenticate("local", 
-    {
-        failureRedirect: "/login",
-    }), function(req,res){
-        res.redirect("/home");
-});
+// router.post("/login", passport.authenticate("local", 
+//     {
+//         failureRedirect: "/login",
+//     }), function(req,res){
+//         res.redirect("/home");
+// });
 // ---------------- Logout ----------------------//
 
 router.get("/logout", function(req,res){
