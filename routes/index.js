@@ -45,7 +45,7 @@ router.get("/register", function(req,res){
 
 // ---------------- Home ----------------------//
 
-router.get("/home", function(req,res){
+router.get("/", function(req,res){
     res.render("home");
 });
 // ---------------- About ----------------------//
