@@ -42,7 +42,7 @@ mongoose.connect(url);
 // ---------------- Landing Route ----------------------//
 
 app.get("/", function(req,res){
-   res.redirect("/home"); 
+    res.redirect("/home");
 });
 
 // ---------------- Listen Port ----------------------//
