@@ -3,6 +3,8 @@
 I designed a website that offered a suite of backend options allowing my client 
 to actively post articles, published papers, and updates of their research.
 
+<img src="https://github.com/cangeles14/cytodel/blob/master/GitHub%20Images/CytodelImg.png" width="50%" height="75%">
+
 ## Built With
 
 * [NodeJS](https://nodejs.org/en/) - JavaScript runtime used to build this network applications
